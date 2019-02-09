@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    android:adjustViewBounds="true"
+
+
+
+    android:background="#FFFFFF"
+
+    tools:context=".Home">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:background="@drawable/headerhomefinal" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:columnCount="2"
+        app:rowCount="3"
+        app:alignmentMode="alignMargins"
+        app:columnOrderPreserved="false"
+
+        android:paddingBottom="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+
+        >
+
+        <!--Row 1-->
+
+        <!--Column 1-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/R1C1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="25dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="RegulatorySigns"
+
+
+            app:cardBackgroundColor="@color/buttonBack"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="1dp"
+
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/regulatorySignsImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:layout_marginTop="15dp"
+
+                    android:src="@drawable/rsstopbutton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:text="Regulatory Signs"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/buttonText"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Column 2-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/R1C2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="25dp"
+            android:focusableInTouchMode="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="WarningSigns"
+            app:cardBackgroundColor="@color/buttonBack"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="1dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/workSignsImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:onClick="WarningSigns"
+
+                    android:src="@drawable/bwarning"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:text="Warning Signs"
+                    android:onClick="WarningSigns"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/buttonText"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!--Row 2-->
+
+        <!--Column 1-->
+
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/R2C1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="25dp"
+            android:onClick="InformationSigns"
+            app:cardBackgroundColor="@color/buttonBack"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="1dp"
+            app:layout_columnWeight="1"
+
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_margin="5dp"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/regulatorySigns122"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/binformation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:text="Information Signs"
+                    android:textAlignment="center"
+                    android:textColor="@color/buttonText"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Column 2-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/R2C2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="25dp"
+            android:onClick="RoadWorkSigns"
+            app:cardBackgroundColor="@color/buttonBack"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="1dp"
+            app:layout_columnWeight="1"
+
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_margin="5dp"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/workSigns22"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/broadwork"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:text="Road Work Signs"
+                    android:textAlignment="center"
+                    android:textColor="@color/buttonText"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!--Row 3-->
+
+        <!--Column 1-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/R3C1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="25dp"
+            android:onClick="otherSigns"
+            app:cardBackgroundColor="@color/buttonBack"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="1dp"
+            app:layout_columnWeight="1"
+
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/othersignsbutton"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:layout_gravity="center"
+                    android:text="Other Signs"
+                    android:textAlignment="center"
+                    android:textColor="@color/buttonText"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Column 2-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/R3C2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="25dp"
+            android:onClick="trafficLights"
+            app:cardBackgroundColor="@color/buttonBack"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="1dp"
+            app:layout_columnWeight="1"
+
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/trafficlightbutton"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:text="Traffic Lights"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/buttonText"
+                    android:textSize="17dp"
+                    android:textStyle="bold"  />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </android.support.v7.widget.GridLayout>
+
+
+</LinearLayout>

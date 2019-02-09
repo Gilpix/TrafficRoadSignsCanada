@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vid_lancer.trafficroadsignscanada">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/trs"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/trs"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBar">
+
+        <activity android:name=".SplashScreen" android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".Home" android:theme="@style/NoActionBar"/>
+
+        <activity android:name=".RegulatorySigns" android:theme="@style/NoActionBar" />
+        <activity android:name=".WarningSigns" android:theme="@style/NoActionBar"/>
+        <activity android:name=".InformationSigns" android:theme="@style/NoActionBar"/>
+        <activity android:name=".RoadWorkSigns" android:theme="@style/NoActionBar"/>
+        <activity android:name=".OtherSigns" android:theme="@style/NoActionBar"/>
+        <activity android:name=".TrafficLights" android:theme="@style/NoActionBar"/>
+
+    </application>
+
+</manifest>
