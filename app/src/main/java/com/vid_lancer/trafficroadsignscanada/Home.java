@@ -10,18 +10,14 @@ import android.widget.GridLayout;
 
 public class Home extends AppCompatActivity {
 
-    //GridLayout mainGrid;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        //mainGrid = (GridLayout) findViewById(R.id.mainGrid);
-        //mainGrid =(android.widget.GridLayout)findViewById(R.id.mainGrid);
-
-
-        //setSingleEvent(mainGrid);
+        
     }
 
 
