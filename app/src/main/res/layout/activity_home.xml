@@ -16,12 +16,56 @@
     tools:context=".Home">
 
 
-    <ImageView
-        android:id="@+id/imageView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".2"
-        android:background="@drawable/homeheader" />
+        android:id="@+id/headerLayout"
+        android:layout_height="@dimen/headerLayoutSize"
+
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:paddingLeft="9dp">
+
+
+        <ImageButton
+            android:id="@+id/backArrow"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="15sp"
+            android:layout_weight=".13"
+            android:adjustViewBounds="true"
+            android:background="@drawable/backarrw"
+
+
+            android:clickable="true"
+            android:onClick="backToOptions"
+            android:padding="7dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="25dp"
+
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:padding="5dp"
+
+            android:textAlignment="center"
+
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/HeaderText"
+
+
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <android.support.v7.widget.GridLayout
         android:id="@+id/mainGrid"
@@ -32,6 +76,7 @@
         app:rowCount="3"
         app:alignmentMode="alignMargins"
         app:columnOrderPreserved="false"
+        android:layout_marginTop="20dp"
 
         android:paddingBottom="35dp"
         android:paddingLeft="15dp"
@@ -86,15 +131,21 @@
 
                     android:src="@drawable/rsstopbutton" />
 
-                <TextView
+
+
+
+
+                <android.support.v7.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight=".4"
                     android:text="Regulatory Signs"
+                    app:autoSizeTextType="uniform"
+                    android:lines="1"
 
                     android:textAlignment="center"
                     android:textColor="@color/buttonText"
-                    android:textSize="17dp"
+                    android:textSize="@dimen/homeSignsCardText"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -145,16 +196,18 @@
 
                     />
 
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight=".4"
-                    android:text="Warning Signs"
                     android:onClick="WarningSigns"
+                    android:text="Warning Signs"
+                    app:autoSizeTextType="uniform"
+                    android:lines="1"
 
                     android:textAlignment="center"
                     android:textColor="@color/buttonText"
-                    android:textSize="17dp"
+                    android:textSize="@dimen/homeSignsCardText"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -203,15 +256,17 @@
                     android:padding="8dp"
                     android:src="@drawable/binformation" />
 
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
+                    android:lines="1"
                     android:layout_weight=".4"
                     android:text="Information Signs"
+                    app:autoSizeTextType="uniform"
                     android:textAlignment="center"
                     android:textColor="@color/buttonText"
-                    android:textSize="17dp"
-                    android:textStyle="bold"/>
+                    android:textSize="@dimen/homeSignsCardText"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -257,14 +312,16 @@
 
                     />
 
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight=".4"
                     android:text="Road Work Signs"
+                    android:lines="1"
                     android:textAlignment="center"
                     android:textColor="@color/buttonText"
-                    android:textSize="17dp"
+                    app:autoSizeTextType="uniform"
+                    android:textSize="@dimen/homeSignsCardText"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -309,15 +366,16 @@
                     android:padding="8dp"
                     android:src="@drawable/othersignsbutton"/>
 
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight=".4"
                     android:layout_gravity="center"
+                    app:autoSizeTextType="uniform"
+                    android:layout_weight=".4"
                     android:text="Other Signs"
                     android:textAlignment="center"
                     android:textColor="@color/buttonText"
-                    android:textSize="17dp"
+                    android:textSize="@dimen/homeSignsCardText"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -333,6 +391,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="25dp"
+            android:lines="1"
             android:onClick="trafficLights"
             app:cardBackgroundColor="@color/buttonBack"
             app:cardCornerRadius="10dp"
@@ -361,16 +420,18 @@
 
                     />
 
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
+                    android:layout_gravity="center"
                     android:layout_weight=".4"
+                    android:lines="1"
                     android:text="Traffic Lights"
                     android:textAlignment="center"
-                    android:layout_gravity="center"
+                    app:autoSizeTextType="uniform"
                     android:textColor="@color/buttonText"
-                    android:textSize="17dp"
-                    android:textStyle="bold"  />
+                    android:textSize="@dimen/homeSignsCardText"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 

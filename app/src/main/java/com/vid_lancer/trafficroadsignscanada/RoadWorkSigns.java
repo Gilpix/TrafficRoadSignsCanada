@@ -69,7 +69,6 @@ public class RoadWorkSigns extends Activity {
 
     public void backToHome(View view) {
         Intent mainIntent = new Intent(RoadWorkSigns.this,Home.class);
-        mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(mainIntent);
     }
 
@@ -77,7 +76,6 @@ public class RoadWorkSigns extends Activity {
     public void onBackPressed() {
         Intent mainIntent = new Intent(RoadWorkSigns.this,Home.class);
 
-        mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(mainIntent);
 
         return;

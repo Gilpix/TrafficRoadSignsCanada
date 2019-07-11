@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Traffic Road Signs Canada</string>
+    <dimen name="circleProgressRadius">80dp</dimen>
+    <dimen name="circleProgressThickness">10dp</dimen>
+
+
+
+
+
+    <!--Splash Screen Layout-->
+    <dimen name="logoHeight">255sp</dimen>
+    <dimen name="logoWidth">260sp</dimen>
+
+    <!--HEADER-->
+    <dimen name="headerLayoutSize">57sp</dimen>
+    <dimen name="HeaderText">25sp</dimen>
+
+
+    <!--Options Layout-->
+    <dimen name="optionsSize">26sp</dimen>
+
+
+
+
+    <!--Home Layout-->
+    <dimen name="homeSignsCardText">16sp</dimen>
+
+
+
+    <!--regulatory_list_view Layout-->
+    <dimen name="listText">15sp</dimen>
+
+
+
+
+
+    <!--Quiz Layout-->
+    <dimen name="quizCardTxt">23sp</dimen>
+    <dimen name="quizsCardRadius">30dp</dimen>
+
+
+    <!--Quiz Question Layout-->
+    <dimen name="questionText">21sp</dimen>
+    <dimen name="quizOptionstxt">16sp</dimen>
+    <dimen name="questionImageWidth">170sp</dimen>
+    <dimen name="nextButtonTxt">26sp</dimen>
+    <dimen name="nextButtonHeight">32sp</dimen>
+    <dimen name="nextButtonWeidth">230sp</dimen>
+
+
+
+
+
+</resources>

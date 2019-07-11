@@ -20,23 +20,23 @@
 
         <ImageButton
             android:id="@+id/backArrow"
+            style="?android:borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:layout_marginBottom="14dp"
-            android:onClick="backToHome"
-            android:clickable="true"
-            style="?android:borderlessButtonStyle"
-            android:adjustViewBounds="true"
-
-
-            android:paddingBottom="8dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="10dp"
-            android:paddingTop="8dp"
-            android:padding="7dp"
             android:layout_weight=".13"
-            android:background="@drawable/backarrow" />
+            android:adjustViewBounds="true"
+            android:background="@drawable/backarrw"
+
+
+            android:clickable="true"
+            android:onClick="backToHome"
+            android:padding="7dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/headerText"
@@ -53,7 +53,7 @@
             android:textAlignment="center"
 
             android:textColor="#FFFFFF"
-            android:textSize="25dp"
+            android:textSize="@dimen/HeaderText"
 
 
             android:textStyle="bold" />

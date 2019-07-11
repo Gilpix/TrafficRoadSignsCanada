@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#41504E</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#A1FF0000</color>
-    <color name="buttonBack">#00BB080E</color>
+    <color name="buttonBack">#00251516</color>
     <color name="pressButton">#a6848280</color>
     <color name="listTextColor">#111111</color>
     <color name="background">#D50000</color>
     <color name="buttonText">#D90707</color>
+    <color name="radioOptText">#494949</color>
+    <color name="wrightAnswer">#0F7015</color>
+    <color name="wrongAnswer">#BD1608</color>
+
+    <color name="roadSigns">#d50000</color>
+    <color name="solveQuiz">#f57f17</color>
+    <color name="ShareUs">#0277bd</color>
+    <color name="RateUs">#651fff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="quizsCardText">#f57f17</color>
+
+
+
+
+    <color name="circleProgressCompleteStartGradient">#2196F3</color>
+    <color name="circleProgressCompleteEndGradient">#00BCD4</color>
+    <color name="circleProgressIncompleteStartGradient">#009688</color>
+    <color name="circleProgressIncompleteEndGradient">#FF9800</color>
 </resources>

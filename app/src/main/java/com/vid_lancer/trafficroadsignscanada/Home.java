@@ -7,15 +7,22 @@ import android.graphics.Color;
 import android.view.View;
 import android.support.v7.widget.CardView;
 import android.widget.GridLayout;
+import android.widget.TextView;
+
+import quiz.Quiz;
 
 public class Home extends AppCompatActivity {
 
+    TextView headerText;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        headerText=(TextView)findViewById(R.id.headerText);
+        headerText.setText("Learn Road Signs");
     }
 
 
@@ -76,8 +83,26 @@ public class Home extends AppCompatActivity {
 
         cardView5.setCardBackgroundColor(Color.parseColor("#A1FF0000"));
 
-        Intent mainIntent = new Intent(Home.this,TrafficLights.class);
+        Intent mainIntent = new Intent(Home.this, TrafficLights.class);
         startActivity(mainIntent);
     }
+
+    public void backToOptions(View view) {
+        Intent mainIntent = new Intent(Home.this, Options.class);
+        mainIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(mainIntent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent mainIntent = new Intent(Home.this,Options.class);
+
+        mainIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(mainIntent);
+
+
+        return;
+    }
+
 }
 

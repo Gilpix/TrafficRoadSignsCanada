@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="16dp"
+        android:textSize="@dimen/listText"
         android:padding="5dp"
         android:textColor="@color/listTextColor" />
 </LinearLayout>

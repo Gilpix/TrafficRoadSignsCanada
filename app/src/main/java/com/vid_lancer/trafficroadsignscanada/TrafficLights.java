@@ -111,7 +111,6 @@ public class TrafficLights extends Activity {
 
         Intent mainIntent = new Intent(TrafficLights.this,Home.class);
 
-        mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(mainIntent);
     }
 
@@ -119,7 +118,6 @@ public class TrafficLights extends Activity {
     public void onBackPressed() {
         Intent mainIntent = new Intent(TrafficLights.this,Home.class);
 
-        mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(mainIntent);
 
         return;

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vid_lancer.trafficroadsignscanada"
+
+
+
     android:versionCode="2"
     android:versionName="2.0"
     >
 
 
     <supports-screens
-        android:smallScreens="false"
+        android:smallScreens="true"
         android:normalScreens="true"
         android:largeScreens="true"
         android:xlargeScreens="false"></supports-screens>
@@ -34,6 +37,8 @@
 
         </activity>
 
+        <activity android:name=".Options" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+
         <activity android:name=".Home" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
 
         <activity android:name=".RegulatorySigns" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
@@ -42,6 +47,16 @@
         <activity android:name=".RoadWorkSigns" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
         <activity android:name=".OtherSigns" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
         <activity android:name=".TrafficLights" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="quiz.Quiz" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="quiz.Quiz1" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="quiz.Result" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="quiz.Quiz2" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="quiz.Quiz3" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="quiz.Quiz4" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="quiz.Quiz5" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="quiz.Quiz6" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="quiz.Quiz7" android:theme="@style/NoActionBar" android:screenOrientation="portrait"/>
+
 
     </application>
 

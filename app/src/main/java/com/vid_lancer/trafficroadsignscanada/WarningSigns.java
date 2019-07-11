@@ -126,7 +126,6 @@ public class WarningSigns extends Activity {
 
         Intent mainIntent = new Intent(WarningSigns.this,Home.class);
 
-        mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(mainIntent);
     }
 
@@ -134,7 +133,6 @@ public class WarningSigns extends Activity {
     public void onBackPressed() {
         Intent mainIntent = new Intent(WarningSigns.this,Home.class);
 
-        mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(mainIntent);
 
             return;
